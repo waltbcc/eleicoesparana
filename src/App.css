@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+    --verde-principal: #07386b;
+    --azul-principal: #445a9d;
+    --azul-paragrafo: #185c84;
+    --texto-claro: #d9d9d9;
+    --degrade: linear-gradient( to bottom, #07386b 0% 33.33%, #d9d9d9 33.33% 66.66%, #07386b 66.66% 100% );
+}
+
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+
+@media screen and (min-width: 1024px) {
+    header {
+        background: linear-gradient( to bottom, #07386b 0% 33.33%, #d6dfeb 33.33% 66.66%, #07386b 66.66% 100% );
+    }
+}
