@@ -14,9 +14,7 @@ function App() {
   useEffect(() => {
     const fetchAuditoria = async () => {
       try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/api/getAuditoria`
-        );
+        const response = await axios.get(`/api/getAuditoria`);
         console.log("Auditoria:", response.data.rows);
         setAuditoria(response.data.rows);
       } catch (error) {
@@ -36,9 +34,7 @@ function App() {
   useEffect(() => {
     const fetchCapas = async () => {
       try {
-        const response = await axios.get(
-          `${import.meta.env.VITE_API_URL}/api/getCapas`
-        );
+        const response = await axios.get(`/api/getCapas`);
         console.log("Capas:", response.data.rows);
         setCapas(response.data.rows);
       } catch (error) {
@@ -58,7 +54,7 @@ function App() {
   return (
     <>
       <Header
-        codacompan="Eleições Brasil - 2026"
+        codacompan="Eleições do Paraná - 2026"
         data_extenso={formatarDataLongaBR(new Date())}
       />
 

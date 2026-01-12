@@ -1,2 +1,1 @@
-# eleicoesbrasil
-"# eleicoesparana" 
+# Eleições do Paraná
